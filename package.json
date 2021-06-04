@@ -1,0 +1,42 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Server/index.js",
+    "dev:react": "webpack --config ./webpack.config.js --mode development -w",
+    "db:setup": "node database-mongodb/seed.js",
+    "webpack": "webpack -watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexTing1/Personal-Website.git"
+  },
+  "author": "Alexander Ting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexTing1/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/AlexTing1/Personal-Website#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
