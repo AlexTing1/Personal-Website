@@ -3,19 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
+  Link,
+} from 'react-router-dom';
 import Nav from './Nav';
+import Image from './Image';
+import About from './About';
 
 function App() {
-
   return (
-    <Router>
-        <div>
-          <Nav />
-        </div>
-    </Router>
-  )
+    <div>
+      <Nav />
+      <Image />
+      <About />
+    </div>
+  );
 }
 
 export default App;
