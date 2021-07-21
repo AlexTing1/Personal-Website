@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Nav from './Nav';
 
 function App() {
 
   return (
-    <div>
-      <a href="https://www.linkedin.com/in/alexanderting1998/">LinkedIn</a>
-    </div>
+    <Router>
+        <div>
+          <Nav />
+        </div>
+    </Router>
   )
 }
 
