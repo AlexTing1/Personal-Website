@@ -1,0 +1,13 @@
+.image {
+  width: 100vw;
+  max-height: 85vh;
+  /* background-size: 100%; */
+}
+
+.imageText {
+  position: absolute;
+  top:200px;
+  left: 0;
+  width: 50%;
+}
+

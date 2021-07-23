@@ -1,0 +1,21 @@
+.profilePic {
+  width: 15vw;
+  height: 45vh;
+  margin-right: 2.5vw;
+}
+
+.about {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph {
+  display:inline-block;
+  word-wrap: break-word;
+  width: 500px;
+}
+
+.page {
+
+}
