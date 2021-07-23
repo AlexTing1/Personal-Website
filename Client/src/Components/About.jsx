@@ -4,8 +4,8 @@ import css from './css/about.css';
 
 function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className={css.page}>
+      <h1 className={css.header}>About Me</h1>
       <div className={css.about}>
         {/* <div className={css.picAndTitle}>
         <h1>About me</h1>
@@ -14,6 +14,7 @@ function About() {
 
         <img src={img} className={css.profilePic} alt="" />
         <div className={css.paragraph}>
+          <h1>Hello World!</h1>
           <p>
             Ever since I was a kid and got my first Star Wars lego set,
             I knew I wanted to be a builder.

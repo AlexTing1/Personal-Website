@@ -1,7 +1,10 @@
 .image {
   width: 100vw;
-  max-height: 85vh;
+  max-height: 86vh;
   /* background-size: 100%; */
+  float:left;
+  margin:0;
+  padding:0;
 }
 
 .imageText {
@@ -11,3 +14,7 @@
   width: 50%;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+}

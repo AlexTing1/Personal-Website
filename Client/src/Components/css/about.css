@@ -6,8 +6,9 @@
 
 .about {
   display:flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
 }
 
 .paragraph {
@@ -16,6 +17,16 @@
   width: 500px;
 }
 
-.page {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7vh;
+}
 
+.page {
+  background-color: rgb(215, 181, 161);
+  margin:0vh;
+  padding:12vh;
+  float:left;
 }
