@@ -27,6 +27,73 @@
 .page {
   background-color: rgb(215, 181, 161);
   margin:0vh;
-  padding:12vh;
+  /* padding:12vh; */
+  padding-top: 6vh;
+  padding-bottom: 12vh;
   float:left;
+}
+
+.iconLinks {
+  /* display: flex;
+  align-items: center;
+  vertical-align: middle; */
+  /* float:left;
+  justify-content: center; */
+
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  mix-blend-mode: multiply;
+  margin-right: 2px;
+}
+
+.myButton {
+  display:flex;
+  width: 7vw;
+  /* align-items: center;
+  vertical-align: middle;
+  justify-content: center; */
+  align-items: left;
+  vertical-align: middle;
+  align-items: center;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:12px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 3px;
+  /* padding-right: 9px; */
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  margin-right: 0.5vw;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.text {
+  /* display: flex; */
+  align-items: right;
+  vertical-align: middle;
+  /* text-align: center; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  vertical-align: center;
 }

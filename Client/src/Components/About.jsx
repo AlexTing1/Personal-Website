@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from '../../dist/img/website_photo.jpg';
 import css from './css/about.css';
 
@@ -28,8 +29,23 @@ function About() {
             and discovered that I loved virtual creation
             (software engineering) much more than physical creation.
           </p>
-        </div>
+          <br />
+          <div id="button" className={css.buttons}>
+            <a href="https://www.linkedin.com/in/alexanderting1998/" className={css.link}>
+              <button type="button" className={css.myButton}>
+                <img src="https://yt3.ggpht.com/ytc/AKedOLQUW9FJ6oz2WOkfU_2SbFanfDvOXrYVfE4SuaDyrz0=s900-c-k-c0x00ffffff-no-rj" alt="linked" className={css.iconLinks} />
+                <span className={css.text}>LinkedIn</span>
+              </button>
+            </a>
+            <a href="https://github.com/AlexTing1" className={css.link}>
+              <button type="button" className={css.myButton}>
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" className={css.iconLinks} />
+                <span className={css.text}>Github</span>
+              </button>
+            </a>
+          </div>
 
+        </div>
       </div>
     </div>
 
