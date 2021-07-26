@@ -4,6 +4,7 @@
   height: 50px;
   mix-blend-mode: multiply;
   margin-right: 2px;
+  filter: grayscale(100%);
 }
 
 .text {
@@ -14,4 +15,5 @@
 .block {
   display: flex;
   align-items: center;
+  margin-bottom: 2vh;
 }

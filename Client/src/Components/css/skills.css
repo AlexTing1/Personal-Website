@@ -1,0 +1,18 @@
+.container {
+  display: inline-flex;
+
+}
+
+.front {
+  /* width: 50%;
+  float: left;
+  padding: 20px; */
+  /* flex: 1; */
+  margin-right: 5vw;
+}
+
+/* .back {
+  width:50%;
+  float:right;
+  padding:20px;
+} */
