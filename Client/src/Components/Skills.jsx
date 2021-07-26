@@ -29,6 +29,10 @@ function Skills() {
     },
   ];
 
+  const backEnd = [
+
+  ];
+
   return (
     <div>
       <h1>Tech Skills</h1>
