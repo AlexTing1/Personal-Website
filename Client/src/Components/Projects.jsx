@@ -1,6 +1,7 @@
 import React from 'react';
 import blue from '../../dist/img/blueOcean/index';
 import ProjectTile from './ProjectTile';
+import css from './css/projects.css';
 
 function Projects() {
   const blueOcean = {
@@ -12,8 +13,14 @@ function Projects() {
   };
 
   return (
-    <div>
-      <ProjectTile tile={blueOcean} />
+    <div className={css.container}>
+      <div className={css.title}>
+        <h1>Projects</h1>
+      </div>
+      <div className={css.tiles}>
+        <ProjectTile tile={blueOcean} />
+      </div>
+
     </div>
   );
 }
