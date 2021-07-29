@@ -9,6 +9,7 @@ import Nav from './Nav';
 import Image from './Image';
 import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 import css from './css/app.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Image />
         <About />
         <Skills />
+        <Projects />
       </div>
       <Switch>
         <Route

@@ -132,7 +132,7 @@ function Skills() {
   ];
 
   return (
-    <div>
+    <div className={css.background}>
       <div className={css.title}>
         <h1>Tech Skills</h1>
       </div>
