@@ -1,0 +1,10 @@
+.tech {
+  border: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.techTitle {
+  margin-bottom: 45px;
+}

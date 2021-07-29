@@ -10,9 +10,16 @@ function ProjectTile({ tile }) {
         <img src={tile.imgDisplay} alt="default display" className={css.img} />
       </div>
       <div id="text block" className={css.textBlock}>
-        <h2>{tile.title}</h2>
-        <p>{tile.body}</p>
-        <TechList list={tile.tech} />
+        <div className={css.textComponent}>
+          <h2>{tile.title}</h2>
+        </div>
+        <div className={css.textComponent}>
+          <p>{tile.body}</p>
+        </div>
+        <div className={css.textComponent}>
+          <TechList list={tile.tech} />
+        </div>
+
       </div>
     </div>
   );
