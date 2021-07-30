@@ -19,7 +19,14 @@ function ProjectTile({ tile }) {
         <div className={css.textComponent}>
           <TechList list={tile.tech} />
         </div>
-
+        <div>
+          <a href={tile.github} className={css.link}>
+            <button type="button" className={css.myButton}>
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" className={css.iconLinks} />
+              <span className={css.text}>{tile.title} Github</span>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

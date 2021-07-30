@@ -1,5 +1,6 @@
 import React from 'react';
 import blue from '../../dist/img/blueOcean/index';
+import puppy from '../../dist/img/puppyRanker/'
 import ProjectTile from './ProjectTile';
 import css from './css/projects.css';
 import descriptions from '../../../projectDescriptions';
@@ -14,6 +15,15 @@ function Projects() {
     img: blue,
   };
 
+  const puppyRanker = {
+    title: 'Puppy Ranker',
+    body: descriptions.puppyRanker,
+    tech: ['Javascript', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
+    github: 'https://github.com/AlexTing1/Puppy-Ranker',
+    imgDisplay: puppy.battle,
+    img: puppy,
+  };
+
   return (
     <div className={css.container}>
       <div className={css.title}>
@@ -21,6 +31,7 @@ function Projects() {
       </div>
       <div className={css.tiles}>
         <ProjectTile tile={blueOcean} />
+        <ProjectTile tile={puppyRanker} />
       </div>
 
     </div>
