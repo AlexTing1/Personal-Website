@@ -5,7 +5,7 @@ import css from './css/about.css';
 
 function About() {
   return (
-    <div className={css.page}>
+    <div id="about" className={css.page}>
       <h1 className={css.header}>About Me</h1>
       <div className={css.about}>
         {/* <div className={css.picAndTitle}>
