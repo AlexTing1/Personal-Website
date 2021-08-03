@@ -1,6 +1,7 @@
 import React from 'react';
 import blue from '../../dist/img/blueOcean/index';
-import puppy from '../../dist/img/puppyRanker/'
+import puppy from '../../dist/img/puppyRanker/';
+import pegasus from '../../dist/img/pegasusShopping';
 import ProjectTile from './ProjectTile';
 import css from './css/projects.css';
 import descriptions from '../../../projectDescriptions';
@@ -24,6 +25,15 @@ function Projects() {
     img: puppy,
   };
 
+  const pegasusShopping = {
+    title: 'Pegasus Shopping',
+    body: descriptions.pegasus,
+    tech: ['Javascript', 'React', 'AWS', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
+    githut: 'https://github.com/Pegasus-Shopping/PegasusShopFront',
+    imgDisplay: pegasus.logo,
+    img: pegasus,
+  };
+
   return (
     <div className={css.container}>
       <div className={css.title}>
@@ -32,6 +42,7 @@ function Projects() {
       <div className={css.tiles}>
         <ProjectTile tile={blueOcean} />
         <ProjectTile tile={puppyRanker} />
+        <ProjectTile tile={pegasusShopping} />
       </div>
 
     </div>
