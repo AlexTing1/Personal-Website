@@ -12,7 +12,7 @@ function Projects() {
     body: descriptions.blueOceanBody,
     tech: ['Javascript', 'React', 'React Router', 'Firebase', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/SEASJO1-Blue-Ocean-2/Harmony',
-    imgDisplay: blue.login,
+    imgDisplay: blue.logo,
     img: blue,
   };
 
