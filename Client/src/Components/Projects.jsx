@@ -21,7 +21,7 @@ function Projects() {
     body: descriptions.puppyRanker,
     tech: ['Javascript', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/AlexTing1/Puppy-Ranker',
-    imgDisplay: puppy.battle,
+    imgDisplay: puppy.logo,
     img: puppy,
   };
 
