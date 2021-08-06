@@ -2,33 +2,34 @@ import React, { useState } from 'react';
 import css from './css/nav.css';
 
 function Nav() {
-  const [pageLinks, setPageLinks] = useState([
+  const pageLinks = [
     {
       id: '1',
       href: '#about',
       text: 'About',
-      isActive: false,
     },
     {
       id: '2',
       href: '#techList',
       text: 'Tech Skills',
-      isActive: false,
     },
-  ]);
+  ];
   const [activeLink, setActiveLink] = useState(null);
 
   function onClick(event) {
-    console.log(event.target);
-    console.log(event.target.id);
-    console.log(activeLink);
     setActiveLink(event.target.id);
+  }
+
+  function reset() {
+    setActiveLink(null);
   }
 
   return (
     <nav className={css.nav}>
-      <span className={css.name}>Alex Ting</span>
       <div className={css.pageLinks}>
+        <a href="#image" className={css.active} onClick={reset}>
+          <span className={css.name}>Alex Ting</span>
+        </a>
         {pageLinks.map((linkObject) => {
           if (activeLink === linkObject.id) {
             return (
