@@ -1,14 +1,17 @@
 .nav{
-  display:flex;
+  /* display:flex; */
+  position: fixed;
+  top: 0px;
   /* justify-content: space-around; */
-  align-items: center;
-  min-height: 6vh;
+  /* align-items: center; */
+  min-height: 5vh;
   color: white;
   font-size: 45px;
   text-shadow: 1px 1px 10px grey;
   margin: 0;
   padding:0;
   background-color: rgb(107, 107, 107);
+  width: 100%
 }
 
 .icon {
@@ -18,4 +21,40 @@
   margin-right: 5px;
   margin-left: 5px;
   border-radius: 20%;
+}
+
+.pageLinks {
+  margin-top: 0.5vh;
+  float:left;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.name {
+  margin-top: 0.5vh;
+  float:left;
+  display: inline-block;
+  text-align: center;
+}
+
+.iconLinks {
+  float:right;
+}
+
+.active {
+  color: green;
+}
+
+.link {
+  text-decoration: none;
+  color:gray;
+}
+
+.link:active{
+  color:red;
+}
+
+a#aboutButton:focus {
+  color:red;
 }
