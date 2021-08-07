@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import css from './css/projectTile.css';
 import TechList from './TechList';
 
 function ProjectTile({ tile }) {
-  console.log(tile.img);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function openModal() {
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
   return (
     <div className={css.container}>
       <div id="tile image" className={css.imgContainer}>
@@ -23,11 +33,24 @@ function ProjectTile({ tile }) {
           <a href={tile.github} className={css.link}>
             <button type="button" className={css.myButton}>
               <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" className={css.iconLinks} />
-              <span className={css.text}>{tile.title} Github</span>
+              <span className={css.text}>
+                {tile.title}
+                {' '}
+                Github
+              </span>
             </button>
           </a>
+          <button type="button" onClick={openModal}>Open Modal</button>
         </div>
       </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+      >
+        <span>TESTING MODAL</span>
+        <button type="button" onClick={closeModal}>Close Modal</button>
+      </Modal>
     </div>
   );
 }
