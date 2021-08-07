@@ -13,6 +13,11 @@ function Nav() {
       href: '#techList',
       text: 'Tech Skills',
     },
+    {
+      id: '3',
+      href: '#projects',
+      text: 'Projects',
+    },
   ];
   const [activeLink, setActiveLink] = useState(null);
 

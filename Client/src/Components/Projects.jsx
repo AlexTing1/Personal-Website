@@ -35,7 +35,7 @@ function Projects() {
   };
 
   return (
-    <div className={css.container}>
+    <div id="projects" className={css.container}>
       <div className={css.title}>
         <h1>Projects</h1>
       </div>
