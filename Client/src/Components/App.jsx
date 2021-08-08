@@ -24,21 +24,11 @@ function App() {
       <div className={css.carousel}>
         <Carousel>
 
-          <div>
-            <img src={images[0]} alt="" />
-          </div>
-
-          <div>
-            <img src={images[1]} alt="" />
-          </div>
-
-          <div>
-            <img src={images[2]} alt="" />
-          </div>
-
-          <div>
-            <img src={images[3]} alt="" />
-          </div>
+          {images.map((image) => (
+            <div>
+              <img src={image} className={css.imgModal} alt="" />
+            </div>
+          ))}
 
         </Carousel>
       </div>

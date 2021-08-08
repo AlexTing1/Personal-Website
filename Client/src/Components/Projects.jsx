@@ -42,7 +42,7 @@ function Projects() {
       <div className={css.tiles}>
         <ProjectTile tile={blueOcean} />
         <ProjectTile tile={puppyRanker} />
-        <ProjectTile tile={pegasusShopping} />
+        {/* <ProjectTile tile={pegasusShopping} / */}>
       </div>
 
     </div>
