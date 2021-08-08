@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import Nav from './Nav';
 import Image from './Image';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import css from './css/app.css';
+import puppy from '../../dist/img/puppyRanker';
 
 function App() {
+  const { images } = puppy;
+
   return (
-    <Router>
+    <div>
       <div className={css.container}>
         <Nav />
         <Image />
@@ -22,16 +21,26 @@ function App() {
         <Skills />
         <Projects />
       </div>
-      <Switch>
-        <Route
-          path="/linkedIn"
-          component={() => {
-            window.location.href = 'https://www.linkedin.com/in/alexanderting1998/';
-            return null;
-          }}
-        />
-      </Switch>
-    </Router>
+      <div>
+        <Carousel>
+          <div>
+            <img src={images[0]} alt="" />
+          </div>
+
+          <div>
+            <img src={images[1]} alt="" />
+          </div>
+
+          <div>
+            <img src={images[2]} alt="" />
+          </div>
+
+          <div>
+            <img src={images[3]} alt="" />
+          </div>
+        </Carousel>
+      </div>
+    </div>
 
   );
 }

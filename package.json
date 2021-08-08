@@ -30,8 +30,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.3",
-    "react-router-dom": "^5.2.0",
-    "style-loader": "^3.2.1"
+    "react-responsive-carousel": "^3.2.20",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -46,6 +46,8 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "to-string-loader": "^1.1.6",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
