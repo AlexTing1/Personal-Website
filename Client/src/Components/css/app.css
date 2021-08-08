@@ -3,3 +3,7 @@
   flex-direction: column;
   overflow-x: hidden;
 }
+
+.carousel {
+  width: 25%;
+}

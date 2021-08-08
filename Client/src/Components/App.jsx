@@ -21,7 +21,7 @@ function App() {
         <Skills />
         <Projects />
       </div>
-      <div>
+      <div className={css.carousel}>
         <Carousel>
 
           <div>
