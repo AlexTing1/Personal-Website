@@ -6,6 +6,12 @@ const CODEMIRROR_PATH = path.resolve(
   __dirname,
   './node_modules/react-responsive-carousel/lib/styles/carousel.min.css',
 );
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const stylePathResolves = (
+  `includePaths[]=${path.resolve('./')}&`
+  + `includePaths[]=${path.resolve('./node_modules')}`
+);
 
 module.exports = {
   entry: [`${SRC_DIR}/index.jsx`],
@@ -29,24 +35,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(scss|css)$/,
-        include: [/node_modules/],
-        use: [
-          'to-string-loader', 'css-loader',
-        ],
-      },
-      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'style',
+          `${'css' + '!sass?outputStyle=expanded&'}${stylePathResolves}`,
+        ),
+      }, {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
-        ],
+        loader: 'style-loader!css-loader',
       }],
   },
   stats: {

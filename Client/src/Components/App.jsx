@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Nav from './Nav';
 import Image from './Image';
 import About from './About';
@@ -23,6 +23,7 @@ function App() {
       </div>
       <div>
         <Carousel>
+
           <div>
             <img src={images[0]} alt="" />
           </div>
@@ -38,6 +39,7 @@ function App() {
           <div>
             <img src={images[3]} alt="" />
           </div>
+
         </Carousel>
       </div>
     </div>
