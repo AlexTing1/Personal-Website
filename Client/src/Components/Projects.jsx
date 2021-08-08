@@ -13,7 +13,7 @@ function Projects() {
     tech: ['Javascript', 'React', 'React Router', 'Firebase', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/SEASJO1-Blue-Ocean-2/Harmony',
     imgDisplay: blue.logo,
-    img: blue,
+    img: blue.images,
   };
 
   const puppyRanker = {
@@ -22,7 +22,7 @@ function Projects() {
     tech: ['Javascript', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/AlexTing1/Puppy-Ranker',
     imgDisplay: puppy.logo,
-    img: puppy,
+    img: puppy.images,
   };
 
   const pegasusShopping = {

@@ -88,3 +88,26 @@
 .link {
   text-decoration: none;
 }
+
+.modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  margin: 0 auto;
+  background-color: papayawhip;
+  width: 60vw;
+  height: 90vh;
+
+}
+
+.imgModalContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgModal {
+  max-width: 60vw;
+  max-height: 70vh;
+}

@@ -4,6 +4,7 @@ import css from './css/projectTile.css';
 import TechList from './TechList';
 
 function ProjectTile({ tile }) {
+  console.log(tile);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   function openModal() {
@@ -47,8 +48,13 @@ function ProjectTile({ tile }) {
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
+        className={css.modal}
+
       >
-        <div id="tile image" className={css.imgContainer}>
+        <div className={css.imgModalContainer}>
+          <img src={tile.img[2]} className={css.imgModal} />
+        </div>
+        {/* <div id="tile image" className={css.imgContainer}>
           <img src={tile.imgDisplay} alt="default display" className={css.img} />
         </div>
         <div id="text block" className={css.textBlock}>
@@ -74,7 +80,7 @@ function ProjectTile({ tile }) {
             </a>
             <button type="button" onClick={openModal}>Open Modal</button>
           </div>
-        </div>
+        </div> */}
       </Modal>
     </div>
   );
