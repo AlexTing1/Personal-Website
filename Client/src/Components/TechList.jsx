@@ -3,11 +3,13 @@ import css from './css/techList.css';
 
 function TechList({ list }) {
   return (
-    <div>
+    <div /* className={css.techContainer} */>
       <h3 className={css.techTitle}>Tech Used: </h3>
-      {list.map((tech) => (
-        <span className={css.tech}>{tech}</span>
-      ))}
+      <div className={css.techContainer}>
+        {list.map((tech) => (
+          <span className={css.tech}>{tech}</span>
+        ))}
+      </div>
     </div>
   );
 }

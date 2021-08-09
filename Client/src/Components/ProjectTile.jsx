@@ -65,14 +65,16 @@ function ProjectTile({ tile }) {
             ))}
           </Carousel>
         </div>
-        <div className={css.modalTextContainer}>
-          <div className={css.modalTextComponent}>
-            <p>{tile.body}</p>
+        <div className={css.blockContainer}>
+          <div className={css.modalTextContainer}>
+            <div className={css.modalTextComponent}>
+              <p>{tile.body}</p>
+            </div>
           </div>
-        </div>
-        <div className={css.modalTextContainer}>
-          <div className={css.textComponent}>
-            <TechList list={tile.tech} />
+          <div className={css.modalTextContainer}>
+            <div className={css.textComponent}>
+              <TechList list={tile.tech} />
+            </div>
           </div>
         </div>
 
