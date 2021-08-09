@@ -97,8 +97,8 @@
   bottom: 40px;
   margin: 0 auto;
   background-color: papayawhip;
-  width: 60vw;
-  height: 90vh;
+  width: 900px;
+  height: 850px;
 
 }
 
@@ -108,13 +108,24 @@
 }
 
 .imgModal {
-  max-width: 40vw;
-  max-height: 80vw;
+  max-width: 400px;
+  max-height: 700px;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+
+  /* margin-left: 200px; */
 }
 
 .carousel {
   display: flex;
   justify-content: center;
-  width: 35vw;
-  height: 75.6vw;
+  /* margin-left: 300px; */
+}
+
+.imgTest {
+  display: flex;
+  justify-content: center;
 }

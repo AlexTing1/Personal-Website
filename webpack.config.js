@@ -34,15 +34,24 @@ module.exports = {
           },
         ],
       },
-      {
+      /* {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           'style',
           `${'css' + '!sass?outputStyle=expanded&'}${stylePathResolves}`,
         ),
-      }, {
+      }, */ {
         test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+            },
+          },
+        ],
       }],
   },
   stats: {

@@ -51,17 +51,19 @@ function ProjectTile({ tile }) {
         onRequestClose={closeModal}
         className={css.modal}
       >
-        <div className={css.carousel}>
+        <div className={css.carouselContainer}>
           <Carousel
             showThumbs={false}
+            className={css.carousel}
           >
             {tile.img.map((image) => (
               <div>
-                <img src={image} className={css.imgModal} alt="" />
+                <img src={image} className={tile.css} alt="" />
               </div>
             ))}
           </Carousel>
         </div>
+
       </Modal>
     </div>
   );

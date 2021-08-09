@@ -14,6 +14,7 @@ function Projects() {
     github: 'https://github.com/SEASJO1-Blue-Ocean-2/Harmony',
     imgDisplay: blue.logo,
     img: blue.images,
+    css: css.harmonyCss,
   };
 
   const puppyRanker = {
@@ -23,6 +24,7 @@ function Projects() {
     github: 'https://github.com/AlexTing1/Puppy-Ranker',
     imgDisplay: puppy.logo,
     img: puppy.images,
+    css: css.puppyCss,
   };
 
   const pegasusShopping = {

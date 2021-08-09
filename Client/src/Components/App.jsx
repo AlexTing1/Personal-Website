@@ -21,17 +21,6 @@ function App() {
         <Skills />
         <Projects />
       </div>
-      <div className={css.carousel}>
-        <Carousel>
-
-          {images.map((image) => (
-            <div>
-              <img src={image} className={css.imgModal} alt="" />
-            </div>
-          ))}
-
-        </Carousel>
-      </div>
     </div>
 
   );
