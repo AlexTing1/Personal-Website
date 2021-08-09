@@ -19,7 +19,7 @@ function ProjectTile({ tile }) {
   return (
     <div className={css.container}>
       <div id="tile image" className={css.imgContainer}>
-        <img src={tile.imgDisplay} alt="default display" className={css.img} />
+        <img src={tile.imgDisplay} alt="default display" className={css.img} onClick={openModal} />
       </div>
       <div id="text block" className={css.textBlock}>
         <div className={css.textComponent}>
@@ -42,7 +42,6 @@ function ProjectTile({ tile }) {
               </span>
             </button>
           </a>
-          <button type="button" onClick={openModal}>Open Modal</button>
         </div>
       </div>
 
@@ -55,6 +54,9 @@ function ProjectTile({ tile }) {
           <Carousel
             showThumbs={false}
             className={css.carousel}
+            autoPlay
+            infiniteLooop
+            showStatus={false}
           >
             {tile.img.map((image) => (
               <div>
@@ -62,6 +64,16 @@ function ProjectTile({ tile }) {
               </div>
             ))}
           </Carousel>
+        </div>
+        <div className={css.modalTextContainer}>
+          <div className={css.modalTextComponent}>
+            <p>{tile.body}</p>
+          </div>
+        </div>
+        <div className={css.modalTextContainer}>
+          <div className={css.textComponent}>
+            <TechList list={tile.tech} />
+          </div>
         </div>
 
       </Modal>

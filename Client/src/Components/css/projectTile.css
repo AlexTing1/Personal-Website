@@ -25,6 +25,10 @@
   max-height: 500px;
 }
 
+.img:hover {
+  cursor: pointer;
+}
+
 .textBlock {
   display: flex;
   flex-direction: column;
@@ -97,19 +101,14 @@
   bottom: 40px;
   margin: 0 auto;
   background-color: papayawhip;
-  width: 900px;
-  height: 850px;
-
+  width: 1500px;
+  max-height: 1000px;
+  overflow-y: auto;
 }
 
 .imgModalContainer {
   display: flex;
   justify-content: center;
-}
-
-.imgModal {
-  max-width: 400px;
-  max-height: 700px;
 }
 
 .carouselContainer {
@@ -126,6 +125,18 @@
 }
 
 .imgTest {
+  display: flex;
+  justify-content: center;
+}
+
+.modalTextComponent {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  height: 350px;
+  border: solid;
+}
+.modalTextContainer {
   display: flex;
   justify-content: center;
 }
