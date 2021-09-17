@@ -6,10 +6,9 @@ In addition to that, I was the elected as the product manager and was responsibi
 
 const puppyRanker = `
 This was a solo project where I created a website that would allow users to upload photos of puppies and rank them based on cuteness.
-Afterward, the users can view the rankings and MMR ranking of each puppy submitted into the system.
-
-I used React to create the front end of the website, and MongoDB as the database to store the website's information.
-I used the MongoDB package gridfs to allow image file uploads to MongoDB database and this was a great experience in learning new packages and applying them to my own projects.
+Afterward, the users can click on the scoreboard button to see the current rankings of puppies in the system.
+In addtion to rankings, MMR ranking and image of each puppy will be shown.
+Rankings can be viewed globally or locally. MMR rankings are created using the standard elo-rating system.
 `;
 
 const pegasus = `

@@ -56,7 +56,7 @@
 
 .myButton {
   display:flex;
-  width: 7vw;
+  width: 200px;
   /* align-items: center;
   vertical-align: middle;
   justify-content: center; */
@@ -102,7 +102,7 @@
   margin: 0 auto;
   background-color: papayawhip;
   width: 1500px;
-  max-height: 1000px;
+  height: 95vh;
   overflow-y: auto;
 }
 
@@ -133,11 +133,73 @@
   display: flex;
   justify-content: center;
   width: 700px;
-  height: 350px;
+  height: 170px;
   border: solid;
 }
 
 .modalTextContainer {
   display: flex;
   justify-content: center;
+
+}
+
+.modalParagraph {
+  font-size: large;
+}
+
+.modalTextContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 335px;
+  /* width: 200px; */
+  /* margin-left: 17.7vw; */
+}
+
+.myButtonModal {
+  display:flex;
+  width: 200px;
+  /* align-items: center;
+  vertical-align: middle;
+  justify-content: center; */
+  align-items: left;
+  vertical-align: middle;
+  align-items: center;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:12px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 3px;
+  /* padding-right: 9px; */
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  margin-right: 0.5vw;
+}
+
+.myButtonModal:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButtonModal:active {
+	position:relative;
+	top:1px;
+}
+
+.blockContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* width:700px; */
+  border: solid;
 }

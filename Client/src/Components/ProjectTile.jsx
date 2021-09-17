@@ -68,8 +68,20 @@ function ProjectTile({ tile }) {
         <div className={css.blockContainer}>
           <div className={css.modalTextContainer}>
             <div className={css.modalTextComponent}>
-              <p>{tile.body}</p>
+              <p className={css.modalParagraph}>{tile.body}</p>
             </div>
+          </div>
+          <div className={css.modalButton}>
+            <a href={tile.github} className={css.link}>
+              <button type="button" className={css.myButtonModal}>
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" className={css.iconLinks} />
+                <span className={css.text}>
+                  {tile.title}
+                  {' '}
+                  Github
+                </span>
+              </button>
+            </a>
           </div>
           <div className={css.modalTextContainer}>
             <div className={css.textComponent}>

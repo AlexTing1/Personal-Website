@@ -12,6 +12,6 @@
 
 .techContainer {
   display:flex;
-  width: 700px;
+  width: 800px;
   flex-wrap: wrap;
 }
