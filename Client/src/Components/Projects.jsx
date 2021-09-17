@@ -33,7 +33,8 @@ function Projects() {
     tech: ['Javascript', 'React', 'AWS', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     githut: 'https://github.com/Pegasus-Shopping/PegasusShopFront',
     imgDisplay: pegasus.logo,
-    img: pegasus,
+    img: pegasus.images,
+    css: css.pegasusCss,
   };
 
   return (
@@ -44,7 +45,7 @@ function Projects() {
       <div className={css.tiles}>
         <ProjectTile tile={blueOcean} />
         <ProjectTile tile={puppyRanker} />
-        {/* <ProjectTile tile={pegasusShopping} / */}>
+        <ProjectTile tile={pegasusShopping} />
       </div>
 
     </div>

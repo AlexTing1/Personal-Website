@@ -84,7 +84,7 @@ function ProjectTile({ tile }) {
             </a>
           </div>
           <div className={css.modalTextContainer}>
-            <div className={css.textComponent}>
+            <div className={css.modalTechList}>
               <TechList list={tile.tech} />
             </div>
           </div>

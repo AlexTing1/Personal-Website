@@ -134,13 +134,18 @@
   justify-content: center;
   width: 700px;
   height: 170px;
-  border: solid;
+  /* border: solid; */
 }
 
 .modalTextContainer {
   display: flex;
   justify-content: center;
 
+}
+
+.modalTechList {
+  margin-bottom: 40px;
+  margin-left: 90px;
 }
 
 .modalParagraph {
@@ -155,7 +160,7 @@
 .modalButton {
   display: flex;
   justify-content: flex-start;
-  margin-left: 335px;
+  margin-left: 380px;
   /* width: 200px; */
   /* margin-left: 17.7vw; */
 }
@@ -201,5 +206,5 @@
   justify-content: center;
   /* align-items: center; */
   /* width:700px; */
-  border: solid;
+  /* border: solid; */
 }
