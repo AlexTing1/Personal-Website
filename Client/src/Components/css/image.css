@@ -1,17 +1,33 @@
 .image {
   width: 100vw;
-  max-height: 86vh;
+  height: 100vh;
   /* background-size: 100%; */
   float:left;
   margin:0;
   padding:0;
 }
 
-.imageText {
+.imageTextContainer {
   position: absolute;
-  top:200px;
-  left: 0;
-  width: 50%;
+  top:22vh;
+  left: 23vw;
+  text-align: center;
+  /* width: 50%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.imageTextName {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 15vh;
+}
+
+.imageTextTitle {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 6vh;
 }
 
 .container {
