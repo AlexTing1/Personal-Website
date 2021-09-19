@@ -5,7 +5,6 @@ import css from './css/projectTile.css';
 import TechList from './TechList';
 
 function ProjectTile({ tile }) {
-  console.log(tile);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   function openModal() {

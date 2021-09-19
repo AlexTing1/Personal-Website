@@ -17,8 +17,8 @@ I was responsible for the reviews section of the website which allowed users to 
 `;
 
 const twitterSent = `
-This was a solo project where I created an web application that conducts sentiment analysis to a selected user's Twitter Account. The application would scan the user's
-tweets and then for each tweet, conduct sentiment analysis to determine if the tweet had positive sentiment or negative sentiment. The application would then return
+This was a solo project where I created an web app that conducts sentiment analysis on a selected user's Twitter Account. The app would scan the user's
+tweets and then conduct sentiment analysis to determine if the tweet had positive, negative, or neutral sentiment. The application would then return
 this information in the format of a doughnut graph. In addition to that, the application would graph the number of tweets, retweets,and likes in a certain timeframe,
 and also display a users most commonly used words in a word cloud.
 `;
