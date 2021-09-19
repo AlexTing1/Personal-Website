@@ -67,7 +67,8 @@ function ProjectTile({ tile }) {
         <div className={css.blockContainer}>
           <div className={css.modalTextContainer}>
             <div className={css.modalTextComponent}>
-              <p className={css.modalParagraph}>{tile.body}</p>
+              {/* <p className={css.modalParagraph}>{tile.body}</p> */}
+              <p className={css.modalParagraph}>{tile.bodyCarosel}</p>
             </div>
           </div>
           <div className={css.modalButton}>

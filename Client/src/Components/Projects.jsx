@@ -11,6 +11,7 @@ function Projects() {
   const blueOcean = {
     title: 'Harmony App',
     body: descriptions.blueOceanBody,
+    bodyCarosel: descriptions.blueOceanCarosel,
     tech: ['Javascript', 'React', 'React Router', 'Firebase', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/SEASJO1-Blue-Ocean-2/Harmony',
     imgDisplay: blue.logo,
@@ -21,6 +22,7 @@ function Projects() {
   const puppyRanker = {
     title: 'Puppy Ranker',
     body: descriptions.puppyRanker,
+    bodyCarosel: descriptions.puppyRankerCarosel,
     tech: ['Javascript', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/AlexTing1/Puppy-Ranker',
     imgDisplay: puppy.logo,
@@ -31,6 +33,7 @@ function Projects() {
   const pegasusShopping = {
     title: 'Pegasus Shopping',
     body: descriptions.pegasus,
+    bodyCarosel: descriptions.pegasusCarosel,
     tech: ['Javascript', 'React', 'AWS', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     githut: 'https://github.com/Pegasus-Shopping/PegasusShopFront',
     imgDisplay: pegasus.logo,
@@ -41,6 +44,7 @@ function Projects() {
   const twitterSentimentAnalysis = {
     title: 'Twitter Sentiment Analysis',
     body: descriptions.twitterSent,
+    bodyCarosel: descriptions.twitterSentCarosel,
     tech: ['Javascript', 'CSS', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/AlexTing1/Twitter-Analysis',
     imgDisplay: twitterSent.logo,

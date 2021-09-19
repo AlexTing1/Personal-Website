@@ -37,7 +37,8 @@
 }
 
 .textComponent {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .iconLinks {
@@ -133,7 +134,7 @@
   display: flex;
   justify-content: center;
   width: 700px;
-  height: 170px;
+  height: 370px;
   /* border: solid; */
 }
 
@@ -149,7 +150,7 @@
 }
 
 .modalParagraph {
-  font-size: large;
+  font-size: 20px;
 }
 
 .modalTextContainer {
