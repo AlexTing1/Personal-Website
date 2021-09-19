@@ -37,6 +37,12 @@ function Projects() {
     css: css.pegasusCss,
   };
 
+  const twitterSentimentAnalysis = {
+    title: 'Twitter Sentiment Analysis',
+    tech: ['Javascript', 'CSS', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
+    github: 'https://github.com/AlexTing1/Twitter-Analysis',
+  };
+
   return (
     <div id="projects" className={css.container}>
       <div className={css.title}>
