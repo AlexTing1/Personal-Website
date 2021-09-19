@@ -1,7 +1,8 @@
 import React from 'react';
 import blue from '../../dist/img/blueOcean/index';
-import puppy from '../../dist/img/puppyRanker/';
+import puppy from '../../dist/img/puppyRanker';
 import pegasus from '../../dist/img/pegasusShopping';
+import twitterSent from '../../dist/img/twitterSentimentAnalysis';
 import ProjectTile from './ProjectTile';
 import css from './css/projects.css';
 import descriptions from '../../../projectDescriptions';
@@ -39,8 +40,12 @@ function Projects() {
 
   const twitterSentimentAnalysis = {
     title: 'Twitter Sentiment Analysis',
+    body: descriptions.twitterSent,
     tech: ['Javascript', 'CSS', 'React', 'MongoDB', 'Axios', 'Express', 'Webpack', 'Babel', 'Jest'],
     github: 'https://github.com/AlexTing1/Twitter-Analysis',
+    imgDisplay: twitterSent.logo,
+    img: twitterSent.images,
+    css: css.twitterSent,
   };
 
   return (
@@ -50,6 +55,7 @@ function Projects() {
       </div>
       <div className={css.tiles}>
         <ProjectTile tile={blueOcean} />
+        <ProjectTile tile={twitterSentimentAnalysis} />
         <ProjectTile tile={puppyRanker} />
         <ProjectTile tile={pegasusShopping} />
       </div>
