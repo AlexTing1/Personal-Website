@@ -14,7 +14,11 @@
 .paragraph {
   display:inline-block;
   word-wrap: break-word;
-  width: 500px;
+  width: 700px;
+}
+
+.paragraphText {
+  font-size: 20px;
 }
 
 .header {
