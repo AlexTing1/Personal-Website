@@ -18,7 +18,7 @@ function ProjectTile({ tile }) {
   return (
     <div className={css.container}>
       <div id="tile image" className={css.imgContainer}>
-        <img src={tile.imgDisplay} alt="default display" className={css.img} onClick={openModal} />
+        <img src={tile.imgDisplay} alt="default display" className={css.img} onClick={openModal}/>
       </div>
       <div id="text block" className={css.textBlock}>
         <div className={css.textComponent}>
@@ -30,7 +30,7 @@ function ProjectTile({ tile }) {
         <div className={css.textComponent}>
           <TechList list={tile.tech} />
         </div>
-        <div>
+        <div className="github-button">
           <a href={tile.github} className={css.link}>
             <button type="button" className={css.myButton}>
               <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" className={css.iconLinks} />
